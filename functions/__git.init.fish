@@ -17,7 +17,7 @@ function __git.init
   __git.create_abbr gau        git add --update
   __git.create_abbr gapa       git add --patch
   __git.create_abbr gap        git apply
-  __git.create_abbr gb         git branch -vv
+  __git.create_abbr gb         git branch
   __git.create_abbr gba        git branch -a -v
   __git.create_abbr gban       git branch -a -v --no-merged
   __git.create_abbr gbd        git branch -d
@@ -28,6 +28,7 @@ function __git.init
   __git.create_abbr gbsg       git bisect good
   __git.create_abbr gbsr       git bisect reset
   __git.create_abbr gbss       git bisect start
+  __git.create_abbr gbv        git branch -vv
   __git.create_abbr gc         git commit -v
   __git.create_abbr gc!        git commit -v --amend
   __git.create_abbr gcn!       git commit -v --no-edit --amend
@@ -62,12 +63,12 @@ function __git.init
   __git.create_abbr gfa        git fetch --all --prune
   __git.create_abbr gfm        "git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD"
   __git.create_abbr gfo        git fetch origin
-  __git.create_abbr gl         git pull
-  __git.create_abbr gll        git pull origin
-  __git.create_abbr glr        git pull --rebase
-  __git.create_abbr glg        git log --stat
-  __git.create_abbr glgg       git log --graph
-  __git.create_abbr glgga      git log --graph --decorate --all
+  __git.create_abbr gp         git pull
+  __git.create_abbr gplr       git pull origin
+  __git.create_abbr gplrb      git pull --rebase
+  __git.create_abbr gl         git log --graph
+  __git.create_abbr gla        git log --graph --decorate --all
+  __git.create_abbr gls        git log --stat
   __git.create_abbr glo        git log --oneline --decorate --color
   __git.create_abbr glog       git log --oneline --decorate --color --graph
   __git.create_abbr glom       git log --oneline --decorate --color \(__git.default_branch\)..
@@ -76,7 +77,7 @@ function __git.init
   __git.create_abbr gm         git merge
   __git.create_abbr gmt        git mergetool --no-prompt
   __git.create_abbr gmom       git merge origin/\(__git.default_branch\)
-  __git.create_abbr gp         git push
+  # __git.create_abbr gps        git push
   __git.create_abbr gp!        git push --force-with-lease
   __git.create_abbr gpo        git push origin
   __git.create_abbr gpo!       git push --force-with-lease origin
@@ -114,9 +115,9 @@ function __git.init
   __git.create_abbr gsh        git show
   __git.create_abbr gsd        git svn dcommit
   __git.create_abbr gsr        git svn rebase
-  __git.create_abbr gss        git status -s
-  __git.create_abbr gst        git status
-  __git.create_abbr gsta       git stash
+  __git.create_abbr gs         git status
+  __git.create_abbr gss        git status -s  
+  __git.create_abbr gst        git stash
   __git.create_abbr gstd       git stash drop
   __git.create_abbr gstl       git stash list
   __git.create_abbr gstp       git stash pop
